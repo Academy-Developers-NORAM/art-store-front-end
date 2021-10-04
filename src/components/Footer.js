@@ -1,15 +1,16 @@
-import {Card} from 'react-bootstrap'
+import { Card} from 'react-bootstrap'
 
 function Footer() {
     return (
-        <Card.Footer className="text-center" style={{background:"light"}}>
+        <footer>
+            <Card.Footer className="text-center fixed" style={{background:"#edf2f5"}}>
 
-            <div className="text-center p-3">
-                <p><strong>Academy Art Store</strong></p>
-                <a href=" " ><strong>Contact Us</strong> </a>
-            </div>
-
-        </Card.Footer>
+                <div className="text-center p-3">
+                    <p><strong>Academy Art Store</strong></p>
+                    <a href=" " ><strong>Contact Us</strong> </a>
+                </div>
+            </Card.Footer>
+        </footer>
     );
   }
   
