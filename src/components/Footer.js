@@ -2,7 +2,7 @@ import {Card} from 'react-bootstrap'
 
 function Footer() {
     return (
-        <Card.Footer className="text-center fixed-bottom" style={{background:"light"}}>
+        <Card.Footer className="text-center" style={{background:"light"}}>
 
             <div className="text-center p-3">
                 <p><strong>Academy Art Store</strong></p>
