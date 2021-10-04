@@ -13,7 +13,6 @@ function App() {
         <Home />
       </main>
       <Footer />
-      
     </>
   );
 }
