@@ -1,8 +1,10 @@
-# README Template
+# Academy Art Store Front End
 
-Foobar is a Python library for dealing with word pluralization.
+This is the fron end for our art store project.
 
 ## Installation
+
+use the npm instal? 
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
@@ -12,7 +14,9 @@ pip install foobar
 
 ## Usage
 
-```python
+Test usage not sure what to put in here yet
+
+```javascript
 import foobar
 
 # returns 'words'
@@ -26,9 +30,7 @@ foobar.singularize('phenomena')
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+In order to merge into the main pull requests are required with 2 other people on the project have reviewed it.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
