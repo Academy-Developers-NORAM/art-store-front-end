@@ -1,4 +1,4 @@
-import { Container, Card, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import firstPic from '../../src/images/SK-A-91.jpg';
 import secondPic from '../images/SK-A-358.jpg';
 import thirdPic from '../images/SK-A-1595.jpg';
@@ -16,7 +16,7 @@ function Store() {
 
 
     return (
-        <Container fluid>
+        <>
         {products.map(product =>(
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={product.image} />
@@ -27,7 +27,7 @@ function Store() {
                 </Card.Body>
             </Card>
         ))}
-        </Container>
+        </>
     );
   }
   
