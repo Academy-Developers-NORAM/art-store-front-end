@@ -32,7 +32,7 @@ function Store() {
                     <Card.Body>
                         <Card.Title>{product.title}</Card.Title>
                         <Card.Text>{product.description}</Card.Text>
-                        {product.inStock ? <Button variant="success">Buy</Button> : ''}
+                        {product.inStock ? <Button variant="success">Buy</Button> : <Button variant="secondary">Out of stock</Button>}
                     </Card.Body>
                 </Card>
             ))}
