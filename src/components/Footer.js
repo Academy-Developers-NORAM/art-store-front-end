@@ -7,7 +7,7 @@ function Footer() {
 
                 <div className="text-center p-3">
                     <p><strong>Academy Art Store</strong></p>
-                    <a href=" " ><strong>Contact Us</strong> </a>
+                    <a href="/contact" ><strong>Contact Us</strong> </a>
                 </div>
             </Card.Footer>
         </footer>
