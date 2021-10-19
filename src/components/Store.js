@@ -1,4 +1,7 @@
-import { Container, Row, Card, Button } from 'react-bootstrap';
+import { Container, Row, Card } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
+import React, { useState } from 'react';
+
 
 function Store() {
      let products = [
@@ -14,7 +17,13 @@ function Store() {
     ];
 
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
+        <div>
         <Container>
             <Row>
             {products.map(product =>(
@@ -23,13 +32,31 @@ function Store() {
                     <Card.Body>
                         <Card.Title>{product.title}</Card.Title>
                         <Card.Text>{product.description}</Card.Text>
-                        {product.inStock ? <Button variant="success">Buy</Button> : <Button variant="secondary">Out of stock</Button>}
+                        {product.inStock ? <Button variant="success" onClick={handleShow}>Buy</Button> : <Button variant="secondary">Out of stock</Button>}
                     </Card.Body>
                 </Card>
             ))}
             </Row>
         </Container>
+
+        <Modal show = {show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>Purchase complete</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Would you like to continue shopping or checkout?</Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Continue Shopping
+                </Button>
+                <Button variant="primary" onClick={handleClose}>Go to checkout
+                </Button>
+            </Modal.Footer>
+        </Modal>
+
+        </div>
     );
   }
+
+  
   
   export default Store;
